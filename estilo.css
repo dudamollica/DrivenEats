@@ -67,6 +67,9 @@ a{
     margin-bottom: 27px;
     position:relative;
 }
+.item-selecionado{
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
+}
 .background{
     background-color: blue;
 }
@@ -145,9 +148,6 @@ a{
     color: rgba(255,255,255,0);
 }
 
-.item-selecionado{
-    box-shadow: inset 0px 0px 0px 5px #32B72F;
-}
 .verificado-verde{
     color: #32B72F;
 }
