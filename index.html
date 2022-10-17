@@ -19,85 +19,97 @@
     </div>
     <span class="dica">Primeiro, seu prato</span>
     <div class="cardapio prato-principal" data-test="dishes">
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarPrato(this)">
          <img src="imagens/frango.png"/>
          <span data-test="food-title" class="prato" >Frango Yin Yang</span>
          <span class="descriçao">Um pouco de batata, um pouco de salada</span>
          <span data-test="food-price" class="preço">R$ 14,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarPrato(this)">
          <img src="imagens/salmao.jpg"/>
          <span data-test="food-title" class="prato">Salmão</span>
          <span class="descriçao">Salmão grelhado com legumes</span>
          <span data-test="food-price" class="preço">R$ 29,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarPrato(this)">
          <img src="imagens/parmeggiana.jpg"/>
          <span data-test="food-title" class="prato">Bife a Parmegiana</span>
          <span class="descriçao">Bife a Parmegiana com arroz e fritas</span>
          <span data-test="food-price" class="preço">R$ 27,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarPrato(this)">
          <img src="imagens/yakissoba.jpg"/>
          <span data-test="food-title" class="prato">Yakissoba</span>
          <span class="descriçao">Yakissoba de carne</span>
          <span data-test="food-price" class="preço">R$ 24,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
     </div>
 
     <span class="dica">Agora, sua bebida</span>
     <div class="cardapio bebida" data-test="drinks">
-       <div class="item" data-test="food-option" >
+       <div class="item" data-test="food-option" onclick="selecionarBebida(this)">
         <img src="imagens/coquinha.png"/>
         <span data-test="food-title" class="prato">Coquinha gelada</span>
         <span class="descriçao">Lata 350ml</span>
         <span data-test="food-price" class="preço">R$ 4,90</span>
+        <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
        </div>
-       <div class="item" data-test="food-option" >
+       <div class="item" data-test="food-option" onclick="selecionarBebida(this)">
         <img src="imagens/suco.jpg"/>
         <span data-test="food-title" class="prato">Suco</span>
         <span class="descriçao">Laranja, limão e morango</span>
         <span data-test="food-price" class="preço">R$ 5,90</span>
+        <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
        </div>
-       <div class="item" data-test="food-option" >
+       <div class="item" data-test="food-option" onclick="selecionarBebida(this)">
         <img src="imagens/sprite.jpg"/>
         <span data-test="food-title" class="prato">Sprite</span>
         <span class="descriçao">Lata 350ml</span>
         <span data-test="food-price" class="preço">R$ 4,90</span>
+        <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
        </div>
-       <div class="item" data-test="food-option">
+       <div class="item" data-test="food-option" onclick="selecionarBebida(this)">
        <img src="imagens/guarana.jpg"/>
        <span data-test="food-title" class="prato">Guaraná</span>
        <span class="descriçao">Lata 350ml</span>
        <span data-test="food-price" class="preço">R$ 4,90</span>
+       <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
       </div>
     </div>
 
     <span class="dica">Por fim, sua sobremesa</span>
     <div class="cardapio sobremesa" data-test="desserts">
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarSobremesa(this)">
         <img src="imagens/pudim.png"/>
          <span data-test="food-title" class="prato">Pudim</span>
          <span class="descriçao">Apenas pudim</span>
          <span data-test="food-price" class="preço">R$ 7,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarSobremesa(this)">
         <img src="imagens/petit-gateau.jpg"/>
          <span data-test="food-title" class="prato">Petit Gateau</span>
          <span class="descriçao">Petit Gateau igual do Jacquin</span>
          <span data-test="food-price" class="preço">R$ 15,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarSobremesa(this)">
         <img src="imagens/milk-shake.jpg"/>
          <span data-test="food-title" class="prato">Milk Shake</span>
          <span class="descriçao">Morango, chocolate e baunilha</span>
          <span data-test="food-price" class="preço">R$ 10,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-test="food-option" >
+        <div class="item" data-test="food-option" onclick="selecionarSobremesa(this)">
          <img src="imagens/torta-holandesa.jpg"/>
          <span data-test="food-title" class="prato">Torta Holandesa</span>
          <span class="descriçao">Pedaço de Torta Holandesa</span>
          <span data-test="food-price" class="preço">R$ 8,90</span>
+         <ion-icon class="verificado" name="checkmark-circle"></ion-icon>
         </div>
     </div>
     
@@ -107,7 +119,8 @@
     </div>
 </div> <!--Fim do Container-->
 
- 
+
 <script src="script.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
