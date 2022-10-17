@@ -71,14 +71,19 @@ function selecionarSobremesa(item){
 
 
 function whatsapp(){
+    let nome= prompt("Qual o seu nome?");
+    let endereço= prompt("Qual o seu endereço?")
     let preço_total = (preço_prato + preço_bebida + preço_sobremesa).toFixed(2) ;
     let mensagem =encodeURIComponent(`Olá, gostaria de fazer o pedido:\n 
     - Prato: ${prato} \n
     - Bebida: ${bebida} \n
     - Sobremesa: ${sobremesa} \n
-    Total: R$ ${preço_total}`);
+    Total: R$ ${preço_total}\n
+
+    Nome: ${nome} \n
+    Endereço: ${endereço} `);
     
-    window.open("https://wa.me/5512988323020?text=" +mensagem);
+    window.open("https://wa.me/5512988192456?text=" +mensagem);
     }
 
     
