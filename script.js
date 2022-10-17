@@ -8,6 +8,7 @@ let sobremesa;
 let preço_prato;
 let preço_bebida;
 let preço_sobremesa;
+let preço_total;
 
 function selecionarPrato(item){
   const verificado = item.querySelector(".verificado");
@@ -73,7 +74,7 @@ function selecionarSobremesa(item){
 function whatsapp(){
     let nome= prompt("Qual o seu nome?");
     let endereço= prompt("Qual o seu endereço?")
-    let preço_total = (preço_prato + preço_bebida + preço_sobremesa).toFixed(2) ;
+    preço_total = (preço_prato + preço_bebida + preço_sobremesa).toFixed(2) ;
     let mensagem =encodeURIComponent(`Olá, gostaria de fazer o pedido:\n 
     - Prato: ${prato} \n
     - Bebida: ${bebida} \n
@@ -97,7 +98,31 @@ function habilitar(){
     }
 
 
+function confirmar(){
+    const botaoConfirma= document.querySelector(".confirmaçao")
+    botaoConfirma.classList.remove("escondido")
+    
+    const nomePrato= document.querySelector(".nome-prato")
+    nomePrato.innerHTML=prato
+    const nomeBebida= document.querySelector(".nome-bebida")
+    nomeBebida.innerHTML=bebida
+    const nomeSobremesa= document.querySelector(".nome-sobremesa")
+    nomeSobremesa.innerHTML=sobremesa
 
+    const preçoPrato=document.querySelector(".preço-prato")
+    preçoPrato.innerHTML=preço_prato
+    const preçoBebida=document.querySelector(".preço-bebida")
+    preçoBebida.innerHTML=preço_bebida
+    const preçoSobremsa=document.querySelector(".preço-sobremesa")
+    preçoSobremsa.innerHTML=preço_sobremesa
+    const preçoTotal=document.querySelector(".preço-total")
+    preçoTotal.innerHTML=(preço_prato + preço_bebida + preço_sobremesa).toFixed(2)
+    button.disabled = false;
 
+}
 
+function cancelar(){
+    const voltar= document.querySelector(".confirmaçao")
+    voltar.classList.add("escondido")
+}
 

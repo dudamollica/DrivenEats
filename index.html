@@ -114,16 +114,36 @@
     </div>
     
     <div class="finalizar">
-        <button class="botao-finalizar" data-test="finish-button" onclick="whatsapp()"> 
+        <button class="botao-finalizar" data-test="finish-button" onclick="confirmar()"> 
             Selecione os três itens <br/>para fechar o pedido </button>
     </div>
 </div> <!--Fim do Container-->
 
 <div class="confirmaçao escondido">
     <div class="caixa-verde">
+        <div class="maior">Confirme seu pedido</div>
+        <div class="infos">
+        <div class="nomes">
+            <div class="nome-prato menor"></div>
+            <div class="nome-bebida menor"></div>
+            <div class="nome-sobremesa menor"></div>
+            <div class="maior">TOTAL</div>
+        </div>
+        <div class="preços">
+            <div class="preço-prato menor"></div>
+            <div class="preço-bebida menor"></div>
+            <div class="preço-sobremesa menor"></div>
+            <div class="preço-total maior"></div>
+        </div>
+         </div>
+
+         <button onclick="whatsapp()" class="tudo-certo">Tudo certo, pode pedir!</button>
+         <button onclick="cancelar()" class="cancelar">Cancelar</button>
+            
+        </div>
  
     </div> 
-</div>
+
 
 
 <script src="script.js"></script>

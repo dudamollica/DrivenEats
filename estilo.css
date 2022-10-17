@@ -7,6 +7,9 @@ body{
 a{
     text-decoration: none;
 }
+button:hover{
+ cursor:pointer;
+}
 .titulo{
     background-color: #CF2B2B;
     height: 92px;
@@ -169,7 +172,57 @@ a{
     position: absolute;
     top:336px;
     left:19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .escondido{
     display: none;
+}
+
+.maior{
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.menor{
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    margin-top: 15px;
+}
+.infos{
+ display:flex;  
+ justify-content: space-around; 
+}
+.nomes{
+    margin-right: 100px;
+}
+.tudo-certo{
+    background: #FFFFFF;
+    border-radius: 100px;
+    width: 329px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 22px;
+    align-items: center;
+    text-align: center; 
+    color: #50D074;
+    border:none;
+    margin-top: 10px;
+}
+.cancelar{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    background-color:#50D074;
+    border:none;
+}
+.cancelar:hover{
+    text-decoration: underline;
 }
